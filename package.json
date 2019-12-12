@@ -45,6 +45,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "fibers": "^4.0.2",
+    "jest-cli": "^24.9.0",
     "jest-enzyme": "^7.1.2",
     "node-sass": "^4.13.0",
     "sass": "^1.23.7",
