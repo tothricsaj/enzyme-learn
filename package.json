@@ -18,8 +18,8 @@
     "eject": "react-scripts eject"
   },
   "jest": {
-    "setupFiles": [
-      "./src/enzyme.js"
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/enzyme.js"
     ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
