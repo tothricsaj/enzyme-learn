@@ -14,7 +14,16 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
+    "test:watch": "jest --watch",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "setupFiles": [
+      "./src/enzyme.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,7 +41,13 @@
     ]
   },
   "devDependencies": {
+    "babel-jest": "^24.9.0",
     "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1"
+    "enzyme-adapter-react-16": "^1.15.1",
+    "fibers": "^4.0.2",
+    "jest-enzyme": "^7.1.2",
+    "node-sass": "^4.13.0",
+    "sass": "^1.23.7",
+    "typescript": "^3.7.3"
   }
 }
