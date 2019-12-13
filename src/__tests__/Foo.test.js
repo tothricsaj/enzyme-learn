@@ -26,8 +26,7 @@ describe('A suite yheaa', () => {
         
         const wrapper = shallow(<Foo />);
 
-        expect(wrapper.find('.test-div')).to.have.lengthOf(1);
+        expect(wrapper.find('.test-div').length).toBe(1);
         expect(wrapper.contains(<div className="test-div">Bacsi Macsi</div>)).toBe(true);
-
     });
 });
