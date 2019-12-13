@@ -12,6 +12,7 @@ class Foo extends React.Component {
         return(
             <div className="foo">
                 Bar
+                <div className="test-div">Bacsi Macsi</div>
             </div>
         );
     }

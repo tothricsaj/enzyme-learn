@@ -4,6 +4,7 @@ import { shallow, mount, render } from 'enzyme';
 import Foo from '../Foo.js';
 
 describe('A suite yheaa', () => {
+    /*
     it('should render without error', () => {
         expect(shallow(<Foo />).contains(<div className="foo">Bar</div>)).toBe(true);
     });
@@ -18,5 +19,15 @@ describe('A suite yheaa', () => {
 
     it('should render tot static HTML', () => {
         expect(render(<Foo />).text()).toEqual('Bar');
+    });
+    */
+
+    it('own staff/attempting with Foo', () => {
+        
+        const wrapper = shallow(<Foo />);
+
+        expect(wrapper.find('.test-div')).to.have.lengthOf(1);
+        expect(wrapper.contains(<div className="test-div">Bacsi Macsi</div>)).toBe(true);
+
     });
 });
